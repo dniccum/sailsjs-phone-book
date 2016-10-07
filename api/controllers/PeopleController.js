@@ -6,6 +6,10 @@
  */
 
 module.exports = {
-	
-};
 
+	createPerson: function(req, res) {
+		console.log("Created a person");
+		return res.ok();
+	}
+
+};
