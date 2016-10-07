@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+    <title><%=typeof title == 'undefined' ? 'Phone Book' : title%></title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,12 +29,23 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/toastr.min.css">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
-    <%- body %>
+    <% include partials/navigation %>
+
+    <div class="container" style="margin-top: 100px;">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+
+          <%- body %>
+
+        </div>
+      </div>
+    </div>
 
 
 
@@ -60,7 +71,7 @@
     -->
 
     <!--TEMPLATES-->
-    
+
     <!--TEMPLATES END-->
 
 
@@ -89,8 +100,10 @@
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
-    <script src="/js/dependencies/bootstrap.min.js"></script>
     <script src="/js/dependencies/jquery.min.js"></script>
+    <script src="/js/dependencies/angular.min.js"></script>
+    <script src="/js/dependencies/toastr.min.js"></script>
+    <script src="/js/dependencies/bootstrap.min.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
