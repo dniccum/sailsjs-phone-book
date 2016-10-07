@@ -8,7 +8,21 @@
 module.exports = {
 
   attributes: {
-
+    firstName: {
+      type: 'string',
+      required: true,
+      minLength: 2,
+      maxLength: 30
+    },
+    lastName: {
+      type: 'string',
+      required: true,
+      minLength: 2,
+      maxLength: 30
+    },
+    phoneNumbers: {
+      collection: 'number',
+      via: 'people'
+    }
   }
 };
-
