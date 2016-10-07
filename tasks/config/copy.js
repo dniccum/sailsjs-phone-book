@@ -38,6 +38,21 @@ module.exports = function(grunt) {
         cwd: './node_modules/jquery/dist/',
         src: ['jquery.min.js'],
         dest: '.tmp/public/js/dependencies'
+      }, {
+        expand: true,
+        cwd: './node_modules/toastr/build/',
+        src: ['toastr.min.js'],
+        dest: '.tmp/public/js/dependencies'
+      }, {
+        expand: true,
+        cwd: './node_modules/toastr/build/',
+        src: ['toastr.min.css'],
+        dest: '.tmp/public/styles'
+      }, {
+        expand: true,
+        cwd: './node_modules/angular/',
+        src: ['angular.min.js'],
+        dest: '.tmp/public/js/dependencies'
       }]
     },
     build: {
