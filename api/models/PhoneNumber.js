@@ -22,7 +22,7 @@ module.exports = {
       defaultsTo: 'Work'
     },
     person: {
-      model: person
+      model: 'person'
     }
   }
 };
