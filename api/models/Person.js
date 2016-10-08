@@ -20,7 +20,7 @@ module.exports = {
       maxLength: 30
     },
     phoneNumbers: {
-      collection: 'number',
+      collection: 'phoneNumber',
       via: 'person'
     }
   }
