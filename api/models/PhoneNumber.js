@@ -16,7 +16,6 @@ module.exports = {
     },
     label: {
       type: 'string',
-      required: true,
       minLength: 3,
       maxLength: 30,
       defaultsTo: 'Work'
