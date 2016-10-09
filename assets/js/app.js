@@ -90,14 +90,19 @@ phoneBook.controller('peopleController', ['$scope', '$http', '$timeout', functio
     $scope.loading = true;
     var id = personId;
 
+    var data = {
+      person: personId,
+      phoneNumber: $scope.numberForm.number
+    };
+
+    if ($scope.numberForm.label) {
+      data.label = $scope.numberForm.label;
+    }
+
     $http({
       method: 'POST',
       url: '/phoneNumber',
-      data: {
-        person: personId,
-        phoneNumber: $scope.numberForm.number,
-        label: $scope.numberForm.label
-      }
+      data: data
     }).then(function(createdNumber) {
       toastr.success('Your number was added successfully!');
       $scope.showEdit(id);
