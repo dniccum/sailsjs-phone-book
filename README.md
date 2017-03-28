@@ -1,6 +1,6 @@
 # SailsJS Phone Book
 
-This is the result of the SailsJS presentation by Doug Niccum at the Praire.Code() 2016 conference. This sample application is built using the [Sails](http://sailsjs.org) framework with AngularJS dependencies.
+This is the result of the SailsJS presentation by Doug Niccum at the Praire.Code() 2016 and Indy.Code() conferences. This sample application is built using the [Sails](http://sailsjs.org) framework with AngularJS dependencies.
 
 ## Dependencies
 
