@@ -18,7 +18,7 @@ module.exports = {
 			return res.ok(response);
 		});
 	},
-	delete: function(req, res) {
+	destroy: function(req, res) {
 		var id = req.param('id');
 
 		Person.findOne({
